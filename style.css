@@ -1,0 +1,162 @@
+/* ===== ENHANCED PROFESSIONAL STYLING ===== */
+:root {
+    --primary-color: #1a1a2e;
+    --accent-color: #16213e;
+    --secondary-color: #0f3460;
+    --highlight-color: #e94560;
+    --bg-white: #ffffff;
+    --bg-light: #f0f0f5;
+    --text-dark: #1a1a2e;
+    --text-light: #4b4b6a;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f0f5 0%, #ffffff 100%);
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.top-nav {
+    background: var(--primary-color);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: var(--shadow);
+}
+
+.top-nav a {
+    color: var(--bg-white);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.top-nav a:hover {
+    background: var(--highlight-color);
+    color: var(--bg-white);
+}
+
+.resume-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--bg-white);
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spreads content across the header */
+    flex-wrap: wrap;
+    gap: 40px; /* Adds more spacing between elements */
+}
+
+.header-name h1 {
+    font-size: 4rem; /* Increased size for better prominence */
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.header-name .tagline {
+    font-size: 1.5rem; /* Increased tagline size */
+    font-weight: 600;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    order: 2; /* Moves the image to the right */
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the profile photo further to the left */
+}
+
+.profile-photo {
+    width: 200px; /* Increased size for better visibility */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top; /* Ensures the head is visible */
+    border: 5px solid var(--bg-white);
+    box-shadow: var(--shadow-lg);
+    margin-left: -80px; /* Moves the photo further to the left */
+    margin-right: 20px; /* Adds spacing between the photo and text */
+}
+
+.section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-left: 6px solid var(--highlight-color);
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+}
+
+.skills-table {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.skills-table th {
+    background: var(--secondary-color);
+    color: var(--bg-white);
+    padding: 12px;
+    text-align: left;
+}
+
+.skills-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.skills-table tr:hover {
+    background: var(--bg-light);
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background: var(--bg-white);
+}
+
+.btn:hover {
+    background: var(--highlight-color);
+    color: var(--bg-white);
+}
